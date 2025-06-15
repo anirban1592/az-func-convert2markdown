@@ -22,7 +22,7 @@ def extract_trigger(req: func.HttpRequest) -> func.HttpResponse:
         )
     if not start or not end:
         return func.HttpResponse(
-            "Please pass both start and end parameters on the query string",
+            "Please pass both start and end parameters on the query string...",
             status_code=400,
         )
 
