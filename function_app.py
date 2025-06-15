@@ -17,7 +17,7 @@ def extract_trigger(req: func.HttpRequest) -> func.HttpResponse:
 
     if not url:
         return func.HttpResponse(
-            "Please pass a URL on the query string or in the request body",
+            "Please pass a URL on the query string or in the request body..",
             status_code=400,
         )
     if not start or not end:
