@@ -6,7 +6,7 @@ import json
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 
 
-@app.route(route="extract_trigger", methods=["GET", "POST"])
+@app.route(route="extract", methods=["GET", "POST"])
 def extract_trigger(req: func.HttpRequest) -> func.HttpResponse:
     logging.info("Python HTTP trigger function processed a request.")
 
