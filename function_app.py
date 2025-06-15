@@ -3,7 +3,7 @@ import logging
 import helper as h
 import json
 
-app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
+app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
 
 @app.route(route="extract_trigger")
